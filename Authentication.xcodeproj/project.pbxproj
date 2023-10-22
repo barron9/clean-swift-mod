@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06EA20972AE5099C000A0CFA /* WelcomeBusinessUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EA20962AE5099C000A0CFA /* WelcomeBusinessUseCase.swift */; };
+		06EA209F2AE50E1A000A0CFA /* WelcomeInteractor+DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EA209E2AE50E1A000A0CFA /* WelcomeInteractor+DataStore.swift */; };
 		71A688911FA2C55800383107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A688901FA2C55800383107 /* AppDelegate.swift */; };
 		71A688961FA2C55800383107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A688941FA2C55800383107 /* Main.storyboard */; };
 		71A688981FA2C55800383107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A688971FA2C55800383107 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		06EA20962AE5099C000A0CFA /* WelcomeBusinessUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBusinessUseCase.swift; sourceTree = "<group>"; };
+		06EA209E2AE50E1A000A0CFA /* WelcomeInteractor+DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeInteractor+DataStore.swift"; sourceTree = "<group>"; };
 		71A6888D1FA2C55800383107 /* Authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A688901FA2C55800383107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A688951FA2C55800383107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		06EA209B2AE50D37000A0CFA /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				06EA209E2AE50E1A000A0CFA /* WelcomeInteractor+DataStore.swift */,
 				71A688E01FA2C8AC00383107 /* WelcomeInteractor+Worker.swift */,
 				71A688DB1FA2C8AC00383107 /* WelcomeInteractor.swift */,
 			);
@@ -357,6 +360,7 @@
 				71A688E51FA2C8AC00383107 /* WelcomeViewController.swift in Sources */,
 				71A688E41FA2C8AC00383107 /* WelcomeRouter.swift in Sources */,
 				71A688E21FA2C8AC00383107 /* WelcomeModels.swift in Sources */,
+				06EA209F2AE50E1A000A0CFA /* WelcomeInteractor+DataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

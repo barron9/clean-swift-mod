@@ -12,10 +12,6 @@
 
 import UIKit
 
-protocol WelcomeDataStore
-{
-}
-
 class WelcomeInteractor: WelcomeBusinessLogic, WelcomeDataStore
 {
   var presenter: WelcomePresentationLogic?
