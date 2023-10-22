@@ -57,12 +57,12 @@
 		71A688AC1FA2C55800383107 /* AuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A688B01FA2C55800383107 /* AuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUITests.swift; sourceTree = "<group>"; };
 		71A688B21FA2C55800383107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71A688DB1FA2C8AC00383107 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeInteractor.swift; path = Scenes/Welcome/WelcomeInteractor.swift; sourceTree = "<group>"; };
-		71A688DC1FA2C8AC00383107 /* WelcomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeModels.swift; path = Scenes/Welcome/WelcomeModels.swift; sourceTree = "<group>"; };
-		71A688DD1FA2C8AC00383107 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewModel.swift; path = Scenes/Welcome/WelcomeViewModel.swift; sourceTree = "<group>"; };
-		71A688DE1FA2C8AC00383107 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeRouter.swift; path = Scenes/Welcome/WelcomeRouter.swift; sourceTree = "<group>"; };
-		71A688DF1FA2C8AC00383107 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Scenes/Welcome/WelcomeViewController.swift; sourceTree = "<group>"; };
-		71A688E01FA2C8AC00383107 /* WelcomeInteractor+Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "WelcomeInteractor+Worker.swift"; path = "Scenes/Welcome/WelcomeInteractor+Worker.swift"; sourceTree = "<group>"; };
+		71A688DB1FA2C8AC00383107 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		71A688DC1FA2C8AC00383107 /* WelcomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeModels.swift; sourceTree = "<group>"; };
+		71A688DD1FA2C8AC00383107 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		71A688DE1FA2C8AC00383107 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		71A688DF1FA2C8AC00383107 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		71A688E01FA2C8AC00383107 /* WelcomeInteractor+Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WelcomeInteractor+Worker.swift"; sourceTree = "<group>"; };
 		71A688E91FA2D0F200383107 /* WelcomeInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeInteractorTests.swift; path = Scenes/Welcome/WelcomeInteractorTests.swift; sourceTree = "<group>"; };
 		71A688EA1FA2D0F200383107 /* WelcomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomePresenterTests.swift; path = Scenes/Welcome/WelcomePresenterTests.swift; sourceTree = "<group>"; };
 		71A688EB1FA2D0F200383107 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewControllerTests.swift; path = Scenes/Welcome/WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
@@ -94,37 +94,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06EA20922AE50921000A0CFA /* Business */ = {
+		06EA20992AE50D0C000A0CFA /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				06EA20962AE5099C000A0CFA /* WelcomeBusinessUseCase.swift */,
+				06EA209A2AE50D1E000A0CFA /* Welcome */,
 			);
-			name = Business;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
-		06EA20932AE50929000A0CFA /* Domain */ = {
+		06EA209A2AE50D1E000A0CFA /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				71A688DC1FA2C8AC00383107 /* WelcomeModels.swift */,
+				71A688DF1FA2C8AC00383107 /* WelcomeViewController.swift */,
+				71A688DD1FA2C8AC00383107 /* WelcomeViewModel.swift */,
+				71A688DE1FA2C8AC00383107 /* WelcomeRouter.swift */,
 			);
-			name = Domain;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
-		06EA20942AE5092F000A0CFA /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				71A688DA1FA2C88800383107 /* Welcome */,
-			);
-			name = Presentation;
-			sourceTree = "<group>";
-		};
-		06EA20952AE50938000A0CFA /* Infrastructure */ = {
+		06EA209B2AE50D37000A0CFA /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				71A688E01FA2C8AC00383107 /* WelcomeInteractor+Worker.swift */,
 				71A688DB1FA2C8AC00383107 /* WelcomeInteractor.swift */,
 			);
-			name = Infrastructure;
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		06EA209C2AE50D4F000A0CFA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				06EA20962AE5099C000A0CFA /* WelcomeBusinessUseCase.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		06EA209D2AE50D70000A0CFA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				71A688DC1FA2C8AC00383107 /* WelcomeModels.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		71A688841FA2C55800383107 = {
@@ -150,10 +160,10 @@
 		71A6888F1FA2C55800383107 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				06EA20942AE5092F000A0CFA /* Presentation */,
-				06EA20952AE50938000A0CFA /* Infrastructure */,
-				06EA20922AE50921000A0CFA /* Business */,
-				06EA20932AE50929000A0CFA /* Domain */,
+				06EA20992AE50D0C000A0CFA /* Presentation */,
+				06EA209B2AE50D37000A0CFA /* Infrastructure */,
+				06EA209C2AE50D4F000A0CFA /* Business */,
+				06EA209D2AE50D70000A0CFA /* Domain */,
 				71A688901FA2C55800383107 /* AppDelegate.swift */,
 				71A688941FA2C55800383107 /* Main.storyboard */,
 				71A688971FA2C55800383107 /* Assets.xcassets */,
@@ -180,16 +190,6 @@
 				71A688B21FA2C55800383107 /* Info.plist */,
 			);
 			path = ExampleUITests;
-			sourceTree = "<group>";
-		};
-		71A688DA1FA2C88800383107 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				71A688DF1FA2C8AC00383107 /* WelcomeViewController.swift */,
-				71A688DD1FA2C8AC00383107 /* WelcomeViewModel.swift */,
-				71A688DE1FA2C8AC00383107 /* WelcomeRouter.swift */,
-			);
-			name = Welcome;
 			sourceTree = "<group>";
 		};
 		71A688E71FA2D0D300383107 /* Scenes */ = {
